@@ -7,6 +7,9 @@ function ModelsTable() {
 
   return (
     <div>
+      <div className="updated-time-container mb-2">
+        <p>Last Updated: {new Date(jsonData.last_updated).toLocaleString()}</p>
+      </div>
       <table className="min-w-full w-full border-gray-200 border dark:border-gray-800">
         <thead>
           <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -20,7 +23,7 @@ function ModelsTable() {
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-200 dark:divide-gray-800">
-          {dataEntries.map(([modelName, details]) => (
+          {Object.entries(jsonData.models).map(([modelName, details]) => (
             <tr key={modelName} className="hover:bg-gray-50 dark:hover:bg-gray-800">
               <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">{modelName}</td>
               <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">{details.litellm_provider}</td>
