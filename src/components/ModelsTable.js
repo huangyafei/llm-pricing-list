@@ -27,8 +27,8 @@ function ModelsTable() {
             <tr key={modelName} className="hover:bg-gray-50 dark:hover:bg-gray-800">
               <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">{modelName}</td>
               <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">{details.litellm_provider}</td>
-              <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.input_cost_per_token}</td>
-              <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.output_cost_per_token}</td>
+              <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{(details.input_cost_per_token * 1000).toFixed(5)}</td>
+              <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{(details.output_cost_per_token * 1000).toFixed(5)}</td>
               <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.max_input_tokens}</td>
               <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.max_output_tokens}</td>
               <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.max_tokens}</td>
