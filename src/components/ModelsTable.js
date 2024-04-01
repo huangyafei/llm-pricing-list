@@ -19,7 +19,7 @@ function ModelsTable() {
             <th className="px-4 py-2 text-left text-sm font-medium text-gray-500 dark:text-gray-400">Output Price</th>
             <th className="px-4 py-2 text-left text-sm font-medium text-gray-500 dark:text-gray-400">Max Input Tokens</th>
             <th className="px-4 py-2 text-left text-sm font-medium text-gray-500 dark:text-gray-400">Max Output Tokens</th>
-            <th className="px-4 py-2 text-left text-sm font-medium text-gray-500 dark:text-gray-400">Max Tokens</th>
+            <th className="px-4 py-2 text-left text-sm font-medium text-gray-500 dark:text-gray-400">Context Size</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-200 dark:divide-gray-800">
@@ -31,7 +31,7 @@ function ModelsTable() {
               <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{(details.output_cost_per_token * 1000).toFixed(5)}</td>
               <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.max_input_tokens}</td>
               <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.max_output_tokens}</td>
-              <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.max_tokens}</td>
+              <td className="px-4 py-3 text-sm text-gray-900 dark:text-gray-100">{details.context_window}</td>
             </tr>
           ))}
         </tbody>
