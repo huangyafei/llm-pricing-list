@@ -181,63 +181,6 @@
             "litellm_provider": "OpenAI",
             "mode": "completion"
         },
-        "text-embedding-3-small": {
-            "max_tokens": 8191,
-            "max_input_tokens": 8191,
-            "input_cost_per_token": 0.00000002,
-            "output_cost_per_token": 0.000000,
-            "litellm_provider": "OpenAI",
-            "mode": "embedding"
-        },
-        "text-embedding-3-large": {
-            "max_tokens": 8191,
-            "max_input_tokens": 8191,
-            "input_cost_per_token": 0.00000013,
-            "output_cost_per_token": 0.000000,
-            "litellm_provider": "OpenAI",
-            "mode": "embedding"
-        },
-        "text-embedding-ada-002": {
-            "max_tokens": 8191,
-            "max_input_tokens": 8191,
-            "input_cost_per_token": 0.0000001,
-            "output_cost_per_token": 0.000000,
-            "litellm_provider": "OpenAI",
-            "mode": "embedding"
-        },
-        "text-moderation-latest": {
-            "max_tokens": 32768,
-            "max_input_tokens": 32768,
-            "max_output_tokens": 0,
-            "input_cost_per_token": 0.000000,
-            "output_cost_per_token": 0.000000,
-            "litellm_provider": "OpenAI",
-            "mode": "moderations"
-        },
-        "text-moderation-stable": {
-            "max_tokens": 32768,
-            "max_input_tokens": 32768,
-            "max_output_tokens": 0,
-            "input_cost_per_token": 0.000000,
-            "output_cost_per_token": 0.000000,
-            "litellm_provider": "OpenAI",
-            "mode": "moderations"
-        },
-        "text-moderation-007": {
-            "max_tokens": 32768,
-            "max_input_tokens": 32768,
-            "max_output_tokens": 0,
-            "input_cost_per_token": 0.000000,
-            "output_cost_per_token": 0.000000,
-            "litellm_provider": "OpenAI",
-            "mode": "moderations"
-        },
-        "whisper-1": {
-            "mode": "audio_transcription",
-            "input_cost_per_second": 0,
-            "output_cost_per_second": 0.0001, 
-            "litellm_provider": "OpenAI"
-        },
         "claude-instant-1": {
             "context_window": 100000,
             "max_input_tokens": 100000,
