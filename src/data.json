@@ -101,8 +101,8 @@
             "supports_function_calling": true
         },
         "gpt-3.5-turbo-0613": {
-            "max_tokens": 4097,
-            "max_input_tokens": 4097,
+            "context_window": 4096,
+            "max_input_tokens": 4096,
             "max_output_tokens": 4096,
             "input_cost_per_token": 0.0000015,
             "output_cost_per_token": 0.000002,
@@ -151,8 +151,8 @@
             "mode": "chat"
         },
         "gpt-3.5-turbo-instruct": {
-            "max_tokens": 4096,
-            "max_input_tokens": 8192,
+            "context_window": 4096,
+            "max_input_tokens": 4096,
             "max_output_tokens": 4096,
             "input_cost_per_token": 0.0000015,
             "output_cost_per_token": 0.000002,
