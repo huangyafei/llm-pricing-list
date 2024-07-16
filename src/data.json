@@ -1,5 +1,5 @@
 {
-    "last_updated": "2024-05-14T15:39:30Z",
+    "last_updated": "2024-07-16T06:10:28Z",
     "models":{
         "gpt-4": {
             "context_window": 8192, 
@@ -258,6 +258,15 @@
             "mode": "chat"
         },
         "claude-3-sonnet-20240229": {
+            "context_window": 200000,
+            "max_input_tokens": 200000,
+            "max_output_tokens": 4096,
+            "input_cost_per_token": 0.000003,
+            "output_cost_per_token": 0.000015,
+            "litellm_provider": "Anthropic",
+            "mode": "chat"
+        },
+        "claude-3-5-sonnet-20240620": {
             "context_window": 200000,
             "max_input_tokens": 200000,
             "max_output_tokens": 4096,
